@@ -1,0 +1,27 @@
+// insert the anode (the longer pin) of the LED
+// into socket 13, insert the cathode (the
+// shorter pin) into the GND (ground) socket on
+// the Arduino Uno board.
+const int LED = 13; 
+
+void setup() {
+  // put your setup code here, to run once
+  // -------------------------------------
+  //
+  // set the LED pin to output mode
+  pinMode(LED, OUTPUT);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly
+  // ------------------------------------------
+  //
+  // turn the LED on
+  digitalWrite(LED, HIGH);
+  // wait
+  delay(50);
+  // turn the LED off
+  digitalWrite(LED, LOW);
+  // wait
+  delay(50);
+}
