@@ -2,7 +2,8 @@
 // into socket 13, insert the cathode (the
 // shorter pin) into the GND (ground) socket on
 // the Arduino Uno board.
-const int LED = 13; 
+const int LED = 13;
+const int DELAY = 50; 
 
 void setup() {
   // put your setup code here, to run once
@@ -19,9 +20,9 @@ void loop() {
   // turn the LED on
   digitalWrite(LED, HIGH);
   // wait
-  delay(50);
+  delay(DELAY);
   // turn the LED off
   digitalWrite(LED, LOW);
   // wait
-  delay(50);
+  delay(DELAY);
 }
